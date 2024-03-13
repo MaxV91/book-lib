@@ -4,7 +4,11 @@ class App
 {
     routes = [
         { path: "", view: MainView }
-    ]
+    ];
+
+    appState = {
+        favourites: []
+    };
 
     constructor()
     {
@@ -19,7 +23,7 @@ class App
             this.currentView.destroy();
         }
         const view = this.routes.find(r => r.path === location.hash).view;
-        this.currentView = new view();
+        this.currentView = new view(this.appState);
         this.currentView.render();
     }
 
