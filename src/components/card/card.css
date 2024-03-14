@@ -6,7 +6,7 @@
 }
 
 .card__image {
-    background: #b8b8b8;
+    background: #B8B8B8;
     display: flex;
     padding-top: 10px;
     justify-content: center;
@@ -19,8 +19,8 @@
     flex-direction: column;
     background: var(--black);
     color: var(--white);
-    min-height: 150px;
     padding: 10px;
+    min-height: 150px;
 }
 
 .card__tag {
@@ -44,7 +44,7 @@
 }
 
 .card__footer {
-    margin: auto;
+    margin-top: auto;
     display: flex;
 }
 
