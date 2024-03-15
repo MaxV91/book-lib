@@ -27,10 +27,10 @@ export class Search extends DivComponent
                     class="search__input"
                     value="${this.state.searchQuery ? this.state.searchQuery : ""}"    
                 />
-                <img src="/static/search.svg" alt="search" />
+                <img src="./static/search.svg" alt="search" />
             </div>
             <button aria-label="search">
-                <img src="/static/search-white.svg" alt="search">
+                <img src="./static/search-white.svg" alt="search">
             </button>
             `;
         this.el.querySelector('button').addEventListener('click', this.search.bind(this));

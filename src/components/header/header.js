@@ -15,15 +15,15 @@ export class Header extends DivComponent
         this.el.innerHTML = 
             `
             <div>
-                <img src="/static/logo.svg" alt="logo">
+                <img src="./static/logo.svg" alt="logo">
             </div>
             <div class="menu">
                 <a href="#" class="menu__item">
-                    <img src="/static/search.svg" alt="search-icon">
+                    <img src="./static/search.svg" alt="search-icon">
                     Поиск книг
                 </a>
                 <a href="#favorites" class="menu__item">
-                    <img src="/static/favorites.svg" alt="favorites">
+                    <img src="./static/favorites.svg" alt="favorites">
                     Избранное
                     <div class="menu__counter">
                         ${this.appState.favorites.length}
