@@ -1138,15 +1138,15 @@
             this.el.innerHTML = 
                 `
             <div>
-                <img src="/static/logo.svg" alt="logo">
+                <img src="./static/logo.svg" alt="logo">
             </div>
             <div class="menu">
                 <a href="#" class="menu__item">
-                    <img src="/static/search.svg" alt="search-icon">
+                    <img src="./static/search.svg" alt="search-icon">
                     Поиск книг
                 </a>
                 <a href="#favorites" class="menu__item">
-                    <img src="/static/favorites.svg" alt="favorites">
+                    <img src="./static/favorites.svg" alt="favorites">
                     Избранное
                     <div class="menu__counter">
                         ${this.appState.favorites.length}
@@ -1184,10 +1184,10 @@
                     class="search__input"
                     value="${this.state.searchQuery ? this.state.searchQuery : ""}"    
                 />
-                <img src="/static/search.svg" alt="search" />
+                <img src="./static/search.svg" alt="search" />
             </div>
             <button aria-label="search">
-                <img src="/static/search-white.svg" alt="search">
+                <img src="./static/search-white.svg" alt="search">
             </button>
             `;
             this.el.querySelector('button').addEventListener('click', this.search.bind(this));
